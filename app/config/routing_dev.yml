@@ -1,5 +1,5 @@
 _welcome:
-    pattern:  /
+    pattern:  /welcome
     defaults: { _controller: AcmeDemoBundle:Welcome:index }
 
 _demo_secured:
@@ -27,6 +27,11 @@ cues_admin:
     resource: "@CUESAdminBundle/Controller"
     type:     annotation
     prefix:   /admin
+
+cues_view:
+    resource: "@CUESViewBundle/Controller"
+    type:     annotation
+    prefix:   /
 
 _main:
     resource: routing.yml

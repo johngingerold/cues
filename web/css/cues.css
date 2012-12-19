@@ -1,0 +1,32 @@
+.hero-unit-cues{
+	padding:20px;
+}
+
+.cues-center{
+width:  1024px;
+margin: 0 auto;
+}
+
+.logo_image_centre{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+.cues-main-content
+{
+    background-color:           white;
+    border:                     1px solid #DFDFDF;
+    padding:                    20px;
+    -moz-border-radius:         16px;
+    -webkit-border-radius:      16px;
+    border-radius:              16px;
+    margin-bottom:              20px;
+    word-wrap:                  break-word;
+}
+
+#cues-header
+{
+    position: relative;
+    padding: 30px 30px 20px 30px;
+    margin-bottom:30px;
+}

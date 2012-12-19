@@ -1,0 +1,87 @@
+<table align="right">
+    <tbody>
+    <tr>
+        <td class="sponsorbannertext"><strong>Main Sponsors:</strong></td>
+    </tr>
+
+    {% for sponsorLink,sponsorImage in mainSponsors %}
+    <tr>
+        <td class="logotable"><a href="{{ sponsorLink}}" target="_blank">
+        <img src="{{ asset(sponsorImage) }}" class="logo_image_centre"></a></td>
+    </tr>
+    {% endfor %}
+
+    <tr>
+        <td class="sponsorbannertext"><strong>Associate Sponsors:</strong></td>
+    </tr>
+
+    {% for sponsorLink,sponsorImage in associateSponsors %}
+        <tr>
+            <td class="logotable"><a href="{{ sponsorLink}}" target="_blank">
+                <img src="{{ asset(sponsorImage) }}" class="logo_image_centre"></a></td>
+        </tr>
+    {% endfor %}
+
+<!--
+    <tr>
+        <td class="logotable">
+            <a href="http://www.aecom.com" target="_blank">
+                <img alt="Aecom Logo" height="54" src="images/SponsorLogos/sidebanner/Aecom_150.png"
+    <tr>
+        <td class="logotable">
+            <a href="" target="_blank">
+                <img alt="ARM logo" height="58" src=" width="150" class="logo_image_centre"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable">
+            <a href="" target="_blank">
+                <img alt="BP logo" class="logo_image_centre" height="100" src="" width="75"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable">
+            <a href="" target="_blank">
+                <img alt="Rolls-Royce Logo" height="41" src="" width="175" class="logo_image_centre"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable">
+            <a href="http://www.shell.co.uk" target="_blank">
+                <img alt="Shell Logo" class="logo_image_centre" height="70" src="images/SponsorLogos/sidebanner/Shell_75.png" width="75"></a></td>
+    </tr>
+    <tr>
+        <td class="sponsorbannertext"><strong><br>
+            Associate Sponsors:</strong></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.centrica.co.uk" target="_blank">
+            <img alt="Centrica Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/centrica_200.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.detica.com" target="_blank">
+            <img alt="Detica Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/detica_200.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.edfenergy.com" target="_blank">
+            <img alt="EDF Energy Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/EDF_wide_200px.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.jaguarlandrover.com/" target="_blank">
+            <img alt="Jaguar Land Rover Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/jlr_200px.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.marshallaerospace.com/" target="_blank">
+            <img alt="Marshall Aerospace" class="logo_image_centre" src="images/SponsorLogos/sidebanner/Marshall_200px.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.pg.com" target="_blank">
+            <img alt="Procter and Gamble Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/P+G_150.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.selexgalileo.com/" target="_blank">
+            <img alt="Selex Galileo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/SelexGalileo_200.png"></a></td>
+    </tr>
+    <tr>
+        <td class="logotable"><a href="http://www.slb.com" target="_blank">
+            <img alt="Schlumberger Logo" class="logo_image_centre" src="images/SponsorLogos/sidebanner/Schlumberger_200.png"></a></td>
+    </tr>
+    -->
+    </tbody></table>

@@ -1,0 +1,24 @@
+<?php
+namespace CUES\ViewBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+* @ORM\Entity
+* @ORM\Table(name="mainSponsor")
+*/
+class mainSponsor
+{
+/**
+* @ORM\Id
+* @ORM\Column(type="string")
+*/
+protected $url;
+
+/**
+* @ORM\Column(type="string")
+*/
+protected $imageLink;
+
+}
+?>
