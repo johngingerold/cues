@@ -2,3 +2,7 @@
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
+cues_admin:
+    resource: "@CUESAdminBundle/Controller"
+    type:     annotation
+    prefix:   /admin

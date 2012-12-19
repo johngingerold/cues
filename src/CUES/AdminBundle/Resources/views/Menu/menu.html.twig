@@ -1,0 +1,3 @@
+{% for menuItemKey,menuItemValue in menuItems %}
+    <li {% if currentPageValue == menuItemValue %} class="active"{% endif %}><a href="{{ menuItemValue }}">{{ menuItemKey }}</a></li>
+{% endfor %}

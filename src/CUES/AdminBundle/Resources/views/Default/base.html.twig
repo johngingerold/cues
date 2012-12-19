@@ -1,0 +1,40 @@
+{% extends '::base.html.twig' %}
+{% block title %}
+    Cambridge University Engineering Society Admin Area
+{% endblock title %}
+{% block stylesheets %}
+    <style>
+        body {
+            padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+ {% endblock stylesheets %}
+{% block body %}
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <span class="lead">Admin Area</span>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        {% if currentPageValue is defined %}
+                            {% render "CUESAdminBundle:Menu:showMenu"  with {currentPageValue: currentPageValue }%}
+                        {% else %}
+                            {% render "CUESAdminBundle:Menu:showMenu" %}
+                        {% endif %}
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block container %}{% endblock container %}
+
+    </div>
+
+{% endblock body %}

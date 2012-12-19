@@ -1,0 +1,7 @@
+parameters:
+#    cues_admin.example.class: CUES\AdminBundle\Example
+
+services:
+#    cues_admin.example:
+#        class: %cues_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

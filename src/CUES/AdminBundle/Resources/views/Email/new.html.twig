@@ -1,0 +1,14 @@
+{% extends 'CUESAdminBundle:Default:base.html.twig' %}
+
+{% block container %}
+    <h1>Send new Email to Mailing Lists</h1>
+    <div class="container">
+        <form action="{{ path('cues_admin_email_new') }}" method="POST" id="contact_form">
+            <h2>To</h2><input type="text" style="width:100%" />
+            <h2>Subject</h2><input type="text"  style="width:100%" />
+            <h2>Message Body</h2>
+            <textarea style="width:100%; min-height: 50em;"></textarea>
+            <input type="submit" value="Send Email"/>
+        </form>
+    </div>
+{% endblock container %}
