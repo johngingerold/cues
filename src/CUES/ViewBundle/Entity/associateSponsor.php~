@@ -5,9 +5,9 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
 * @ORM\Entity
-* @ORM\Table(name="mainSponsor")
+* @ORM\Table(name="associateSponsor")
 */
-class mainSponsor
+class associateSponsor
 {
 /**
 * @ORM\Id
@@ -25,7 +25,7 @@ protected $imageLink;
      * Set url
      *
      * @param string $url
-     * @return mainSponsor
+     * @return associateSponsor
      */
     public function setUrl($url)
     {
@@ -48,7 +48,7 @@ protected $imageLink;
      * Set imageLink
      *
      * @param string $imageLink
-     * @return mainSponsor
+     * @return associateSponsor
      */
     public function setImageLink($imageLink)
     {
