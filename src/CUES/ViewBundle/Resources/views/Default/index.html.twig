@@ -1,31 +1,15 @@
-{% extends '::base.html.twig' %}
-{% block title %}Cambridge University Engineeering Society{% endblock %}
-{% block body %}
-<div class="cues-center">
-<div id="cues-header">
-    <a href="">
-        <img src="{{ asset('images/logo.png') }}" alt="CUES logo" style="float:left">
-    </a>
-    <h1>Cambridge University Engineering Society</h1>
-</div>
-<div class="cues-main-content">
-
-
-
-<!-- Main hero unit for a primary marketing message or call to action -->
+{% extends 'CUESViewBundle:Default:base.html.twig' %}
+{% block heroBox %}
 <div class="hero-unit hero-unit-cues">
     <h1>Become a Member!</h1><p>While you're here, if you are not a member of the Cambridge University Engineering Society, why not sign up?</p><p>Membership entitles you to free access to our regular presentations (including a free lunch), discounted access to society social events, and some job and placement opportunities that CUES receive directly from industry to name just a few of our offerings.</p><p>Upon joining you will also receive a goodie bag including the much sort after CUES mug! We offer two levels of membership: Life membership is £15 or you can opt for a single year at a cost of £10.&nbsp;</p><p class="homeleft"><a class="btn btn-primary btn-large" href="/cues/admin/index.php?page=membership">Sign up here</a>
 </div>
+{% endblock %}
 
-
-<!-- Example row of columns -->
-<div class="row">
-    {% render "CUESViewBundle:Menu:showMenu" %}
-    {% render "CUESViewBundle:Sponsor:showSponsors" %}
-
+{% block mainContent %}
 
     <div class="span3 cues-bulletin">
         <h2>CUES Bulletin</h2>
+
         <p><strong>17 Oct 2012</strong>
         <ol>
             <li>CUES Careers and Placements Fair 2012 - Thursda...</li>
@@ -40,78 +24,17 @@
         <h2>Building a brighter tomorrow</h2>
 
         <p><strong>Lunchtime Presentation LR6 25 Oct 2012 - 1.00pm</strong></p>
-        <p>Our business is energy. But more than that, it’s about the future of energy. That’s the challenge we’re taking on in the next few years. Join us, and ...</p>
-        <p><a class="btn" href="#">Read More</a></p>
-    </div>
-    <div class="span3">
-        <h2>More News</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn" href="#">Read More</a></p>
-    </div>
-    <div class="span3">
-        <h2>Sponsors Advert</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn" href="#">Read More</a></p>
-    </div>
-    <div class="span3">
-        <h2>More News</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn" href="#">Read More</a></p>
-    </div>
 
-    <div class="span3">
-        <h2>More News</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>Our business is energy. But more than that, it’s about the future of energy. That’s the challenge we’re
+            taking on in the next few years. Join us, and ...</p>
+
         <p><a class="btn" href="#">Read More</a></p>
     </div>
-</div>
-<hr>
-<div class="row">
-    <div class="span10">
-        <h1>Upcoming Events</h1>
-        <table class="table table-hover table-striped">
-            <thead>
-            <tr>
-                <th scope="col" class="span1">Date</th>
-                <th scope="col" class="span7">Event</th>
-                <th class="span1"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td >21 Nov 2012</td>
-                <td >Flight Testing Helmet Mounted Displays</td>
-                <td><a class="btn" href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>6 Nov 2012</td>
-                <td>What is Engineering Consultancy?</td>
-                <td><a class="btn" href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>30 Oct 2012</td>
-                <td>Process Engineering</td>
-                <td><a class="btn" href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>29 Oct 2012</td>
-                <td>Rolls-Royce Careers Evening</td>
-                <td><a class="btn" href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>25 Oct 2012</td>
-                <td>Building a brighter tomorrow</td>
-                <td><a class="btn" href="#">Read More</a></td>
-            </tr>
-            </tbody>
-        </table>
-
     </div>
-</div>
-
-<hr>
-
-<footer>
-    <p>&copy; Cambridge University Engineering Society 2012</p>
-</footer>
+    <hr>
+    <div class="row">
+        <div class="span10">
+            <h1>Upcoming Events</h1>
+            {% render "CUESViewBundle:Events:listEvents" %}
+        </div>
 {% endblock %}

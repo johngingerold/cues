@@ -17,7 +17,7 @@ class EventsController extends Controller
         return array('currentPageValue' => $this->generateUrl('cues_admin_events_list'));
     }
     /**
-     * @Route("/events/{event}")
+     * @Route("/events/{date}")
      * @Template()
      */
     public function manageAction($event)

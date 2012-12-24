@@ -1,0 +1,8 @@
+{% extends 'CUESViewBundle:Default:base.html.twig' %}
+{% block mainContent %}
+    {% if event %}
+        {{ event[0].title }}
+    {% else %}
+        There are no events with that name.
+    {% endif %}
+{% endblock %}

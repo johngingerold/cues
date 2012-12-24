@@ -1,0 +1,26 @@
+{% extends 'CUESViewBundle:Default:base.html.twig' %}
+{% block mainContent %}
+    {% if eventsList %}
+    <div class="span6">
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th scope="col" class="span5">Event</th>
+                <th class="span1"></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for event in eventsList %}
+                <tr>
+                    <td >{{ event.date|date('d/m/y H:i')  }}</td>
+                    <td >{{ event.title }}</td>
+                    <td><a class="btn" href="#">Read More</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    {% else %}
+        There are no events on that date.
+    {% endif %}
+{% endblock %}

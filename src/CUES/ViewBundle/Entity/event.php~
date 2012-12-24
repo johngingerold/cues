@@ -1,0 +1,48 @@
+<?php
+namespace CUES\ViewBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+* @ORM\Entity
+* @ORM\Table(name="event")
+*/
+class event
+{
+    /**
+    * @ORM\Id
+    * @ORM\Column(type="integer")
+    */
+    protected $id;
+
+    /**
+    * @ORM\Column(type="string")
+    */
+    protected $title;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $shortTitle;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $date;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $shortDescription;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $longDescription;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $active;
+
+}

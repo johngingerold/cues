@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+{% block title %}Cambridge University Engineeering Society{% endblock %}
+{% block body %}
+<div class="cues-center">
+<div id="cues-header">
+    <a href="">
+        <img src="{{ asset('images/logo.png') }}" alt="CUES logo" style="float:left">
+    </a>
+    <h1>Cambridge University Engineering Society</h1>
+</div>
+<div class="cues-main-content">
+
+    {% block heroBox %}{% endblock %}
+<!-- Example row of columns -->
+<div class="row">
+    {% render "CUESViewBundle:Menu:showMenu" %}
+    {% render "CUESViewBundle:Sponsor:showSponsors" %}
+    {% block mainContent %}{% endblock %}
+</div>
+</div>
+
+<footer>
+    <p>&copy; Cambridge University Engineering Society 2012</p>
+</footer>
+</div>
+{% endblock %}

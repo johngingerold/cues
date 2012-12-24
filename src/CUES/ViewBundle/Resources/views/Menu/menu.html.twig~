@@ -1,9 +1,11 @@
 <div class="span2">
     <ul class="nav nav-list nav-stacked">
         {% for menuItem in menuItems %}
-            <li {% if currentPageValue == menuItem.url %} class="active"{% endif %}
-                {% if menuItem.header %} class="nav-header"{% endif %}>
+			{% if menuItem.header %}<li class="nav-header">{{ menuItem.Text }}</li>
+			{% else %}            
+			<li {% if currentPageValue == menuItem.url %} class="active"{% endif %} >
                 <a href="{{ menuItem.url}}">{{ menuItem.Text }}</a></li>
+			{% endif %}
         {% endfor %}
         <!--
         <li class="nav-header">Menu</li>
